@@ -11,6 +11,8 @@
 		97BFFDEC282006CD00F6E3BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BFFDEB282006CD00F6E3BD /* ContentView.swift */; };
 		97BFFDEE282006CF00F6E3BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97BFFDED282006CF00F6E3BD /* Assets.xcassets */; };
 		97BFFDF1282006CF00F6E3BD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97BFFDF0282006CF00F6E3BD /* Preview Assets.xcassets */; };
+		97BFFDFB2820077F00F6E3BD /* StatusBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BFFDFA2820077F00F6E3BD /* StatusBarViewModel.swift */; };
+		97BFFDFD28200D6300F6E3BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BFFDFC28200D6300F6E3BD /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,9 @@
 		97BFFDED282006CF00F6E3BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97BFFDF0282006CF00F6E3BD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		97BFFDF2282006CF00F6E3BD /* CopyCat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CopyCat.entitlements; sourceTree = "<group>"; };
+		97BFFDFA2820077F00F6E3BD /* StatusBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarViewModel.swift; sourceTree = "<group>"; };
+		97BFFDFC28200D6300F6E3BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		97BFFDFE282017F000F6E3BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +57,10 @@
 		97BFFDE8282006CD00F6E3BD /* CopyCat */ = {
 			isa = PBXGroup;
 			children = (
+				97BFFDFE282017F000F6E3BD /* Info.plist */,
+				97BFFDFC28200D6300F6E3BD /* AppDelegate.swift */,
+				97BFFDF92820076000F6E3BD /* ViewModels */,
+				97BFFDF82820075200F6E3BD /* Views */,
 				97BFFDE9282006CD00F6E3BD /* CopyCatApp.swift */,
 				97BFFDEB282006CD00F6E3BD /* ContentView.swift */,
 				97BFFDED282006CF00F6E3BD /* Assets.xcassets */,
@@ -67,6 +76,21 @@
 				97BFFDF0282006CF00F6E3BD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		97BFFDF82820075200F6E3BD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		97BFFDF92820076000F6E3BD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				97BFFDFA2820077F00F6E3BD /* StatusBarViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +163,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97BFFDFD28200D6300F6E3BD /* AppDelegate.swift in Sources */,
 				97BFFDEC282006CD00F6E3BD /* ContentView.swift in Sources */,
+				97BFFDFB2820077F00F6E3BD /* StatusBarViewModel.swift in Sources */,
 				97BFFDEA282006CD00F6E3BD /* CopyCatApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +300,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CopyCat/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,6 +328,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CopyCat/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
